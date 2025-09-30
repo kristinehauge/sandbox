@@ -1,0 +1,11 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("leafs.jpg");
+    min-height: 400px;
+    background-repeat: no-repeat;
+    Background-size: cover;
+}

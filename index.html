@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image Test</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to this tester page</h1>
+    </header>
+    <form action="thank-you.html" method="GET">
+      <label for="name">Email:</label>
+      <input type="email" id="email" name="email" />
+      <button>Subscribe</button>
+    </form>
+    <input type="text" name="username" />
+    <input type="email" name="email" />
+    <input type="date" name="birthday" />
+    <input type="button" value="click me" onclick="doSomething()" />
+    <input type="range" name="volume" min="0" max="100" />
+    <input type="radio" name="gender" value="male" /> Male
+    <input type="text" name="firstname" />
+    <label for="useername">Username:</label>
+    <input type="text" id="username" name="username" />
+    <input value="Prefilled text example" />
+    <input type="radio" name="age" value="18-24" id="age-range-1" />
+    <label for="age-range-1">18-24</label>
+    <input type="radio" name="age" value="25-35" id="age-range-2" />
+    <label for="age-range-2">25-35</label>
+    <label for="cities">Choose a city</label>
+    <select name="cities" id="cities">
+      <option value="paris">Paris</option>
+      <option value="bergen">Bergen</option>
+    </select>
+    <label for="pet-choice">Choose a pet:</label>
+    <input list="pets" id="pet-choice" name="pet-choice" />
+    <datalist id="pets">
+      <option value="Dog"></option>
+      <option value="Cat"></option>
+    </datalist>
+    <fieldset>
+      <legend>Bio</legend>
+      <textarea id="message" name="message" rows="5" cols="30"></textarea>
+    </fieldset>
+    <form action="/profile" id="login">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+      <button>Log in</button>
+    </form>
+  </body>
+</html>
