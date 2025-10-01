@@ -9,3 +9,36 @@ header {
     background-repeat: no-repeat;
     Background-size: cover;
 }
+
+input[type="text"] {
+    padding: 5px;
+    width: 300px;
+}
+
+input[type="email"] {
+    padding: 5px;
+    width: 300px;
+}
+
+form {
+    width: 600px;
+    border: 15px solid rgb(111, 153, 111);
+    padding: 50px;
+    margin: 20px;
+}
+
+.button {
+    padding:12px 24px;
+    border: 2px solid green;
+    margin: 5px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
