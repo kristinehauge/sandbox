@@ -1,13 +1,24 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-image: url("leafs.jpg");
+    background-image: url("images/leafs.jpg");
     min-height: 400px;
     background-repeat: no-repeat;
     Background-size: cover;
+}
+
+h1 {
+    background-color: rgb(108, 151, 108);
+    padding: 10px;
 }
 
 input[type="text"] {
@@ -37,8 +48,128 @@ html {
     box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+.float {
+    background: lightblue;
+    padding: 30px;
+    margin: 10px;
+}
+
+.floated-right {
+    float: right;
+}
+
+.floated-left {
+    float: left;
+}
+
+.float-2 {
+    margin: 10px;
+    float: right;
+    height: 150px;
+}
+
+.clear {
+    clear: right;
+}
+
+.float-left {
+    float: left;
+}
+
+div {
+    border: 1px solid black;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.relative-position {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background: lightblue;
+    padding: 10px;
+}
+
+.container {
+    height: 150px;
+}
+
+.absolute-position {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background: rgb(149, 189, 149);
+    padding: 10px;
+}
+
+.container-2 {
+    position: relative;
+    height: 150px;
+    margin-top: 40px;
+}
+
+.fixed-position {
+    position: fixed;
+    top: 70px;
+    left: 380px;
+    background-color: rgb(166, 209, 166);
+    padding: 10px;
+}
+
+.sticky-position {
+    position: sticky;
+    top: 20px;
+    background: rgb(129, 180, 129);
+    padding: 10px;
+}
+
+.container-4 {
+    height: 500px;
+    .sticky-position {
+        position: sticky;
+        top: 20px;
+        background: rgb(129, 180, 129);
+        padding: 10px;
+    }
+}
+
+.container-4 {
+    height: 500px;;
+}
+
+.one {
+    z-index: 2;
+    background: lightgreen;
+    padding: 20px;
+    width: 200px;
+    position: relative;
+}
+
+.two {
+    z-index: 1;
+    background: lightblue;
+    padding: 20px;
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.container-5 {
+    position: relative;
+    height: 100px;
+}
+
+.container-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin: 5px;
+    flex: 1;
 }
